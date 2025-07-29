@@ -1,6 +1,6 @@
 schemaVersion: "1.2"
 endpoints:
-  - name: "rest-api-be2"
+  - name: "rest-api"
     displayName: "REST API"
     service:
       basePath: /
@@ -12,4 +12,4 @@ endpoints:
 
 env:
   - name: DATABASE_URL
-    value: ${env:DATABASE_URL}
+    value: "postgresql://neondb_owner:npgXXXXX@ep-soft-flower-xxxx.us-east-2.aws.neon.tech/dbname?sslmode=require"
