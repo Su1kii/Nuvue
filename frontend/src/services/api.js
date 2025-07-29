@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://0a3dae40-435b-4a55-bd32-2ba507a2a1fb.e1-us-east-azure.choreoapps.dev/choreo-apis/nuvue/backend/v1";
 
 export const login = async (username, password) => {
   const formData = new FormData();
