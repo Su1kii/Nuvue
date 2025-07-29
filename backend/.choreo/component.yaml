@@ -9,3 +9,7 @@ endpoints:
     networkVisibility:
       - Project
       - Public
+
+env:
+  - name: DATABASE_URL
+    value: ${env:DATABASE_URL}
