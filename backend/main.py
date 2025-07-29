@@ -13,7 +13,7 @@ app.include_router(post.router)
 app.include_router(authentication.router)
 app.include_router(comment.router)
 
-origins = ["https://0a3dae40-435b-4a55-bd32-2ba507a2a1fb.e1-us-east-azure.choreoapps.dev"]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
