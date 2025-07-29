@@ -9,7 +9,3 @@ endpoints:
     networkVisibility:
       - Project
       - Public
-
-env:
-  - name: DATABASE_URL
-    value: "postgresql://neondb_owner:npgXXXXX@ep-soft-flower-xxxx.us-east-2.aws.neon.tech/dbname?sslmode=require"
