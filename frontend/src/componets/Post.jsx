@@ -43,7 +43,7 @@ const Post = ({ post, authToken, currentUsername }) => {
 
   const fetchComments = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/comment/all/${post.id}`);
+      const res = await fetch(`https://0a3dae40-435b-4a55-bd32-2ba507a2a1fb.e1-us-east-azure.choreoapps.dev/choreo-apis/nuvue/backend/v1/comment/all/${post.id}`);
       if (res.ok) {
         const data = await res.json();
         setComments(data);
@@ -77,7 +77,7 @@ const Post = ({ post, authToken, currentUsername }) => {
         post_id: post.id,
       };
 
-      const res = await fetch("http://localhost:8000/comment/", {
+      const res = await fetch("https://0a3dae40-435b-4a55-bd32-2ba507a2a1fb.e1-us-east-azure.choreoapps.dev/choreo-apis/nuvue/backend/v1/comment/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
