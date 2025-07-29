@@ -13,7 +13,7 @@ app.include_router(post.router)
 app.include_router(authentication.router)
 app.include_router(comment.router)
 
-origins = ["*"]
+origins = ["http://localhost:5173"]
 
 app.add_middleware(
     CORSMiddleware,
