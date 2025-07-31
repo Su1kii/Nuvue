@@ -43,7 +43,7 @@ const Post = ({ post, authToken, currentUsername }) => {
 
   const fetchComments = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/${post.id}`);
+      const res = await fetch(`https://nuvue-mu1h.onrender.com/${post.id}`);
       if (res.ok) {
         const data = await res.json();
         setComments(data);
@@ -77,7 +77,7 @@ const Post = ({ post, authToken, currentUsername }) => {
         post_id: post.id,
       };
 
-      const res = await fetch("http://localhost:8000/comment/", {
+      const res = await fetch("https://nuvue-mu1h.onrender.com/comment/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
