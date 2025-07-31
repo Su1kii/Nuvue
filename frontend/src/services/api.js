@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://nuvue-mu1h.onrender.com";
 
 export const login = async (username, password) => {
   const formData = new FormData();
