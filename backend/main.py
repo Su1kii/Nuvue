@@ -13,7 +13,7 @@ app.include_router(post.router)
 app.include_router(authentication.router)
 app.include_router(comment.router)
 
-origins = ["https://nuvue-phi.vercel.app/"]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
